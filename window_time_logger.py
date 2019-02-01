@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 
 period = 1
 
-
+print("hello")
 
 
 def currtime(tformat=None):
@@ -35,6 +35,7 @@ def summarize():
     with open('/home/bhuvana/names.csv', 'w') as csvfile:
        # startt = currtime()
         start_time=datetime.now()
+        start_time=start_time+period
         endtime = start_time
         fieldnames = ['Starting_Time','Ending_Time', 'Application_Name', 'Total_Time', 'Screen_Time', 'Screen_Name']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
